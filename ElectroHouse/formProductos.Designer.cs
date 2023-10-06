@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            button3 = new Button();
             dateTimePicker1 = new DateTimePicker();
             textBox6 = new TextBox();
             label9 = new Label();
@@ -40,15 +41,14 @@
             comboBox2 = new ComboBox();
             button1 = new Button();
             textBox4 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtnombreproducto = new TextBox();
+            txtcodigoproducto = new TextBox();
             comboBox1 = new ComboBox();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            button3 = new Button();
             listView1 = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
@@ -74,8 +74,8 @@
             groupBox1.Controls.Add(comboBox2);
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(textBox4);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(txtnombreproducto);
+            groupBox1.Controls.Add(txtcodigoproducto);
             groupBox1.Controls.Add(comboBox1);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
@@ -87,6 +87,16 @@
             groupBox1.Size = new Size(494, 326);
             groupBox1.TabIndex = 11;
             groupBox1.TabStop = false;
+            // 
+            // button3
+            // 
+            button3.BackColor = SystemColors.AppWorkspace;
+            button3.Location = new Point(586, 376);
+            button3.Name = "button3";
+            button3.Size = new Size(84, 31);
+            button3.TabIndex = 25;
+            button3.Text = "Salir";
+            button3.UseVisualStyleBackColor = false;
             // 
             // dateTimePicker1
             // 
@@ -184,19 +194,19 @@
             textBox4.Size = new Size(116, 23);
             textBox4.TabIndex = 9;
             // 
-            // textBox2
+            // txtnombreproducto
             // 
-            textBox2.Location = new Point(47, 113);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(142, 23);
-            textBox2.TabIndex = 7;
+            txtnombreproducto.Location = new Point(47, 113);
+            txtnombreproducto.Name = "txtnombreproducto";
+            txtnombreproducto.Size = new Size(142, 23);
+            txtnombreproducto.TabIndex = 7;
             // 
-            // textBox1
+            // txtcodigoproducto
             // 
-            textBox1.Location = new Point(47, 59);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(142, 23);
-            textBox1.TabIndex = 6;
+            txtcodigoproducto.Location = new Point(47, 59);
+            txtcodigoproducto.Name = "txtcodigoproducto";
+            txtcodigoproducto.Size = new Size(142, 23);
+            txtcodigoproducto.TabIndex = 6;
             // 
             // comboBox1
             // 
@@ -255,16 +265,6 @@
             label1.Size = new Size(48, 15);
             label1.TabIndex = 0;
             label1.Text = "Codigo:";
-            // 
-            // button3
-            // 
-            button3.BackColor = SystemColors.AppWorkspace;
-            button3.Location = new Point(586, 376);
-            button3.Name = "button3";
-            button3.Size = new Size(84, 31);
-            button3.TabIndex = 25;
-            button3.Text = "Salir";
-            button3.UseVisualStyleBackColor = false;
             // 
             // listView1
             // 
@@ -341,8 +341,8 @@
         private ComboBox comboBox2;
         private Button button1;
         private TextBox textBox4;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtnombreproducto;
+        private TextBox txtcodigoproducto;
         private ComboBox comboBox1;
         private Label label5;
         private Label label4;
