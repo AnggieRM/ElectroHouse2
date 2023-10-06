@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            textBox4 = new TextBox();
+            txtTelefono = new TextBox();
             label7 = new Label();
             label2 = new Label();
             button2 = new Button();
-            textBox5 = new TextBox();
+            txtRUC = new TextBox();
             label6 = new Label();
             label5 = new Label();
-            textBox6 = new TextBox();
+            txtCiudad = new TextBox();
             button1 = new Button();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtDireccion = new TextBox();
+            txtNombre = new TextBox();
+            txtCodigo = new TextBox();
             label4 = new Label();
             label3 = new Label();
             label1 = new Label();
@@ -55,18 +55,18 @@
             // groupBox1
             // 
             groupBox1.BackgroundImageLayout = ImageLayout.None;
-            groupBox1.Controls.Add(textBox4);
+            groupBox1.Controls.Add(txtTelefono);
             groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(textBox5);
+            groupBox1.Controls.Add(txtRUC);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(textBox6);
+            groupBox1.Controls.Add(txtCiudad);
             groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(txtDireccion);
+            groupBox1.Controls.Add(txtNombre);
+            groupBox1.Controls.Add(txtCodigo);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label1);
@@ -76,12 +76,12 @@
             groupBox1.TabIndex = 13;
             groupBox1.TabStop = false;
             // 
-            // textBox4
+            // txtTelefono
             // 
-            textBox4.Location = new Point(302, 178);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(164, 23);
-            textBox4.TabIndex = 25;
+            txtTelefono.Location = new Point(302, 178);
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.Size = new Size(164, 23);
+            txtTelefono.TabIndex = 25;
             // 
             // label7
             // 
@@ -113,12 +113,12 @@
             button2.Text = "Limpiar";
             button2.UseVisualStyleBackColor = false;
             // 
-            // textBox5
+            // txtRUC
             // 
-            textBox5.Location = new Point(55, 178);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(164, 23);
-            textBox5.TabIndex = 21;
+            txtRUC.Location = new Point(55, 178);
+            txtRUC.Name = "txtRUC";
+            txtRUC.Size = new Size(164, 23);
+            txtRUC.TabIndex = 21;
             // 
             // label6
             // 
@@ -140,12 +140,12 @@
             label5.TabIndex = 17;
             label5.Text = "Nombre:";
             // 
-            // textBox6
+            // txtCiudad
             // 
-            textBox6.Location = new Point(302, 69);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(164, 23);
-            textBox6.TabIndex = 16;
+            txtCiudad.Location = new Point(302, 69);
+            txtCiudad.Name = "txtCiudad";
+            txtCiudad.Size = new Size(164, 23);
+            txtCiudad.TabIndex = 16;
             // 
             // button1
             // 
@@ -156,27 +156,28 @@
             button1.TabIndex = 10;
             button1.Text = "Registrar";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // textBox3
+            // txtDireccion
             // 
-            textBox3.Location = new Point(302, 122);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(171, 23);
-            textBox3.TabIndex = 8;
+            txtDireccion.Location = new Point(302, 122);
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.Size = new Size(171, 23);
+            txtDireccion.TabIndex = 8;
             // 
-            // textBox2
+            // txtNombre
             // 
-            textBox2.Location = new Point(55, 122);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(149, 23);
-            textBox2.TabIndex = 7;
+            txtNombre.Location = new Point(55, 122);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(149, 23);
+            txtNombre.TabIndex = 7;
             // 
-            // textBox1
+            // txtCodigo
             // 
-            textBox1.Location = new Point(55, 69);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(129, 23);
-            textBox1.TabIndex = 6;
+            txtCodigo.Location = new Point(55, 69);
+            txtCodigo.Name = "txtCodigo";
+            txtCodigo.Size = new Size(129, 23);
+            txtCodigo.TabIndex = 6;
             // 
             // label4
             // 
@@ -253,6 +254,7 @@
             Controls.Add(groupBox1);
             Name = "formProveedor";
             Text = "formProveedor";
+            Load += formProveedor_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -261,18 +263,18 @@
         #endregion
 
         private GroupBox groupBox1;
-        private TextBox textBox4;
+        private TextBox txtTelefono;
         private Label label7;
         private Label label2;
         private Button button2;
-        private TextBox textBox5;
+        private TextBox txtRUC;
         private Label label6;
         private Label label5;
-        private TextBox textBox6;
+        private TextBox txtCiudad;
         private Button button1;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtDireccion;
+        private TextBox txtNombre;
+        private TextBox txtCodigo;
         private Label label4;
         private Label label3;
         private Label label1;

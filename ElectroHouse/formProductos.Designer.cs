@@ -211,6 +211,7 @@
             // 
             // cmbEstadoProducto
             // 
+            cmbEstadoProducto.AllowDrop = true;
             cmbEstadoProducto.FormattingEnabled = true;
             cmbEstadoProducto.Items.AddRange(new object[] { "Si", "No" });
             cmbEstadoProducto.Location = new Point(294, 165);
