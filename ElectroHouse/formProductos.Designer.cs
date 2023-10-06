@@ -30,20 +30,20 @@
         {
             groupBox1 = new GroupBox();
             button3 = new Button();
-            dateTimePicker1 = new DateTimePicker();
-            textBox6 = new TextBox();
+            dtpproductos = new DateTimePicker();
+            txtproveedorproducto = new TextBox();
             label9 = new Label();
             label8 = new Label();
             button2 = new Button();
-            textBox5 = new TextBox();
+            txtPrecioProducto = new TextBox();
             label7 = new Label();
             label6 = new Label();
-            comboBox2 = new ComboBox();
-            button1 = new Button();
-            textBox4 = new TextBox();
+            cmbTipoProducto = new ComboBox();
+            btnregistarproductos = new Button();
+            txtCantidad = new TextBox();
             txtnombreproducto = new TextBox();
             txtcodigoproducto = new TextBox();
-            comboBox1 = new ComboBox();
+            cmbEstadoProducto = new ComboBox();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
@@ -63,26 +63,26 @@
             // 
             groupBox1.BackgroundImageLayout = ImageLayout.None;
             groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(dateTimePicker1);
-            groupBox1.Controls.Add(textBox6);
+            groupBox1.Controls.Add(dtpproductos);
+            groupBox1.Controls.Add(txtproveedorproducto);
             groupBox1.Controls.Add(label9);
             groupBox1.Controls.Add(label8);
             groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(textBox5);
+            groupBox1.Controls.Add(txtPrecioProducto);
             groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(comboBox2);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(textBox4);
+            groupBox1.Controls.Add(cmbTipoProducto);
+            groupBox1.Controls.Add(btnregistarproductos);
+            groupBox1.Controls.Add(txtCantidad);
             groupBox1.Controls.Add(txtnombreproducto);
             groupBox1.Controls.Add(txtcodigoproducto);
-            groupBox1.Controls.Add(comboBox1);
+            groupBox1.Controls.Add(cmbEstadoProducto);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(57, 23);
+            groupBox1.Location = new Point(156, 24);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(494, 326);
             groupBox1.TabIndex = 11;
@@ -98,19 +98,19 @@
             button3.Text = "Salir";
             button3.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker1
+            // dtpproductos
             // 
-            dateTimePicker1.Location = new Point(47, 167);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(159, 23);
-            dateTimePicker1.TabIndex = 23;
+            dtpproductos.Location = new Point(47, 167);
+            dtpproductos.Name = "dtpproductos";
+            dtpproductos.Size = new Size(159, 23);
+            dtpproductos.TabIndex = 23;
             // 
-            // textBox6
+            // txtproveedorproducto
             // 
-            textBox6.Location = new Point(294, 59);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(131, 23);
-            textBox6.TabIndex = 22;
+            txtproveedorproducto.Location = new Point(294, 59);
+            txtproveedorproducto.Name = "txtproveedorproducto";
+            txtproveedorproducto.Size = new Size(131, 23);
+            txtproveedorproducto.TabIndex = 22;
             // 
             // label9
             // 
@@ -142,12 +142,12 @@
             button2.Text = "Limpiar";
             button2.UseVisualStyleBackColor = false;
             // 
-            // textBox5
+            // txtPrecioProducto
             // 
-            textBox5.Location = new Point(47, 219);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(109, 23);
-            textBox5.TabIndex = 18;
+            txtPrecioProducto.Location = new Point(47, 219);
+            txtPrecioProducto.Name = "txtPrecioProducto";
+            txtPrecioProducto.Size = new Size(109, 23);
+            txtPrecioProducto.TabIndex = 18;
             // 
             // label7
             // 
@@ -169,30 +169,31 @@
             label6.TabIndex = 16;
             label6.Text = "Precio:";
             // 
-            // comboBox2
+            // cmbTipoProducto
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(294, 111);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(126, 23);
-            comboBox2.TabIndex = 15;
+            cmbTipoProducto.FormattingEnabled = true;
+            cmbTipoProducto.Location = new Point(294, 111);
+            cmbTipoProducto.Name = "cmbTipoProducto";
+            cmbTipoProducto.Size = new Size(126, 23);
+            cmbTipoProducto.TabIndex = 15;
             // 
-            // button1
+            // btnregistarproductos
             // 
-            button1.BackColor = SystemColors.AppWorkspace;
-            button1.Location = new Point(122, 266);
-            button1.Name = "button1";
-            button1.Size = new Size(84, 31);
-            button1.TabIndex = 10;
-            button1.Text = "Registrar";
-            button1.UseVisualStyleBackColor = false;
+            btnregistarproductos.BackColor = SystemColors.AppWorkspace;
+            btnregistarproductos.Location = new Point(122, 266);
+            btnregistarproductos.Name = "btnregistarproductos";
+            btnregistarproductos.Size = new Size(84, 31);
+            btnregistarproductos.TabIndex = 10;
+            btnregistarproductos.Text = "Registrar";
+            btnregistarproductos.UseVisualStyleBackColor = false;
+            btnregistarproductos.Click += btnregistarproductos_Click;
             // 
-            // textBox4
+            // txtCantidad
             // 
-            textBox4.Location = new Point(294, 219);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(116, 23);
-            textBox4.TabIndex = 9;
+            txtCantidad.Location = new Point(294, 219);
+            txtCantidad.Name = "txtCantidad";
+            txtCantidad.Size = new Size(116, 23);
+            txtCantidad.TabIndex = 9;
             // 
             // txtnombreproducto
             // 
@@ -208,13 +209,14 @@
             txtcodigoproducto.Size = new Size(142, 23);
             txtcodigoproducto.TabIndex = 6;
             // 
-            // comboBox1
+            // cmbEstadoProducto
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(294, 165);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(134, 23);
-            comboBox1.TabIndex = 5;
+            cmbEstadoProducto.FormattingEnabled = true;
+            cmbEstadoProducto.Items.AddRange(new object[] { "Si", "No" });
+            cmbEstadoProducto.Location = new Point(294, 165);
+            cmbEstadoProducto.Name = "cmbEstadoProducto";
+            cmbEstadoProducto.Size = new Size(134, 23);
+            cmbEstadoProducto.TabIndex = 5;
             // 
             // label5
             // 
@@ -232,9 +234,9 @@
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(305, 147);
             label4.Name = "label4";
-            label4.Size = new Size(46, 15);
+            label4.Size = new Size(122, 15);
             label4.TabIndex = 3;
-            label4.Text = "Estado:";
+            label4.Text = "Estado (Defectuoso):";
             // 
             // label3
             // 
@@ -269,9 +271,9 @@
             // listView1
             // 
             listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5 });
-            listView1.Location = new Point(43, 368);
+            listView1.Location = new Point(95, 365);
             listView1.Name = "listView1";
-            listView1.Size = new Size(519, 157);
+            listView1.Size = new Size(607, 157);
             listView1.TabIndex = 24;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
@@ -299,11 +301,12 @@
             // columnHeader5
             // 
             columnHeader5.Text = "Proveedor";
+            columnHeader5.Width = 120;
             // 
             // button4
             // 
             button4.BackColor = SystemColors.AppWorkspace;
-            button4.Location = new Point(551, 552);
+            button4.Location = new Point(348, 542);
             button4.Name = "button4";
             button4.Size = new Size(84, 31);
             button4.TabIndex = 25;
@@ -314,7 +317,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(651, 595);
+            ClientSize = new Size(811, 595);
             Controls.Add(button4);
             Controls.Add(groupBox1);
             Controls.Add(listView1);
@@ -330,20 +333,20 @@
 
         private GroupBox groupBox1;
         private Button button3;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox6;
+        private DateTimePicker dtpproductos;
+        private TextBox txtproveedorproducto;
         private Label label9;
         private Label label8;
         private Button button2;
-        private TextBox textBox5;
+        private TextBox txtPrecioProducto;
         private Label label7;
         private Label label6;
-        private ComboBox comboBox2;
-        private Button button1;
-        private TextBox textBox4;
+        private ComboBox cmbTipoProducto;
+        private Button btnregistarproductos;
+        private TextBox txtCantidad;
         private TextBox txtnombreproducto;
         private TextBox txtcodigoproducto;
-        private ComboBox comboBox1;
+        private ComboBox cmbEstadoProducto;
         private Label label5;
         private Label label4;
         private Label label3;
