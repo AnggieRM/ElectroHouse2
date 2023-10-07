@@ -29,5 +29,11 @@ namespace ElectroHouse
         {
             this.Close();
         }
+
+        private void ingreseUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLogin login = new frmLogin();
+            login.Show();
+        }
     }
 }
